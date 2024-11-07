@@ -280,6 +280,7 @@
   transform: translate(-50%, -50%);
   background-color: transparent;
   z-index: 222;
+  animation: fadein 2s ease-in forwards;
 }
 .section1-content > h2 {
   background-color: transparent;
@@ -310,4 +311,93 @@
   letter-spacing: 1.63px;
   color: #fff;
   outline: 0;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section2 {
+  width: 100%;
+  min-height: 400px;
+  background-image: url("../images/horizons_village.png"),
+    url("../images/stars.png"),
+    linear-gradient(180deg, #15111d, #323657 121.35%);
+  background-position: 50% 101%, 50% bottom;
+  background-size: 2000px auto, 2000px auto, 100% 100%;
+  background-repeat: no-repeat;
+}
+.section2-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 60px 20px 100px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+.section2 .contentlist {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 18px 35px;
+  max-width: 570px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+/* ============= 그라데이션 안먹음 =================*/
+.section2-img {
+  background: linear-gradient(0deg, #00001b, rgba(0, 0, 27, 0) 20%);
+}
+.section2-grid img {
+  /* display: block; */
+  width: 100%;
+  height: auto;
+}
+.section2-grid-item {
+  min-height: 97px;
+  padding: 5px 13px;
+}
+.section2-grid-title {
+  background-color: #0b163b;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Sofia Pro", sans-serif;
+  border-radius: 12px;
+  padding: 5px 8px;
+  width: fit-content;
+  position: relative;
+  top: -18px;
+}
+.section2-grid-content {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Sofia Pro", sans-serif;
+  line-height: 21px;
+  min-height: 66px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* ============= 배경 안먹음 =================*/
+.section2-grid-footer {
+  background-image: url("../images/section2_grid_bottom.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 30px;
+}
+.poll {
+  background-image: url("../images/section2_poll.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 520px;
+  width: 100%;
+  background-color: transparent;
 }
