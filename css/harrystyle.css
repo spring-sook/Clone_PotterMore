@@ -5,8 +5,26 @@
 }
 @font-face {
   font-family: "Sofia Pro";
-  src: url("/fonts/sofia pro/Sofia Pro Regular Az.otf") format("opentype");
+  src: url("../fonts/sofia pro/Sofia Pro Regular Az.otf") format("opentype");
   font-weight: 500; /* Black */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia Pro Light";
+  src: url("../fonts/sofia pro/Sofia Pro Light Az.otf") format("opentype");
+  font-weight: 200; /* Black */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia Pro Bold";
+  src: url("../fonts/sofia pro/Sofia Pro Bold Az.otf") format("opentype");
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Harry Beast Display";
+  src: url("../fonts/HarryBeastDisplay-Regular.woff2") format("woff2");
+  font-weight: 100;
   font-style: normal;
 }
 .header {
@@ -162,40 +180,134 @@
 }
 .section1 {
   display: flex;
-  background-image: url(/images/main_section1_trailer.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
   width: 100%;
   height: 550px;
   min-height: 400px;
+  overflow: hidden;
+}
+.trailer {
+  background-image: url("../images/main_section1_trailer_thu.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: section1_zoomout 1.3s ease-in-out 0s 1 forwards;
+}
+.cloud-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/clouds-left-b85acc1b6ae89695809a91420440641e.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  z-index: 2;
+  animation: cloudRevealLeft 1.5s ease-in-out 0.25s 1 forwards;
+}
+.cloud-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/clouds-right-7031ef0d886b707cbb18a0118c950ee2.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  z-index: 2;
+  animation: cloudRevealRight 1.5s ease-in-out 0.25s 1 forwards;
+}
+@keyframes section1_zoomout {
+  0% {
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: center;
+  }
+}
+@keyframes cloudRevealLeft {
+  from {
+    transform: translate(-50%);
+  }
+  to {
+    transform: translate(-75%);
+  }
+}
+
+@keyframes cloudRevealRight {
+  from {
+    transform: translate(50%);
+  }
+  to {
+    transform: translate(76%);
+  }
 }
 
 @media (min-width: 1042px) {
   .section1 {
-    background: url(/images/main_section1_trailer.png) 50% 50% no-repeat;
-    background-size: cover;
     box-sizing: border-box;
-    position: relative;
   }
-
-  .section1.section1_animate {
-    animation: section1_zoomOut 1.3s ease-in-out 0s 1 forwards;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1041px) {
-  .section1 {
-    background: url(/images/main_section1_trailer.png) 50% 50% no-repeat;
-    background-size: cover;
+  .trailer {
+    width: 100%;
+    height: 100%;
   }
 }
-
-/* 애니메이션 키프레임 정의 */
-@keyframes section1_zoomOut {
-  0% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+.section1-bottom {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(1turn, #15111d 40%, rgba(21, 17, 29, 0));
+  bottom: 0;
+  z-index: 22;
+}
+.section1-content {
+  position: absolute;
+  width: 1150px;
+  height: 370px;
+  padding: 0 25px;
+  bottom: 98px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  z-index: 222;
+}
+.section1-content > h2 {
+  background-color: transparent;
+  color: #fff;
+  max-width: 50%;
+  font-size: 50px;
+  font-family: "Harry Beast Display", sans-serif;
+  margin: 0 0 17px;
+}
+.section1-content > p {
+  background-color: transparent;
+  color: #fff;
+  max-width: 48%;
+  font-family: "Sofia Pro Light", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 24px;
+  margin: 0 0 25px;
+  text-align: left;
+}
+.section1-content > button {
+  background-color: #5758ff;
+  padding: 12px 45px 14px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.63px;
+  color: #fff;
+  outline: 0;
 }
