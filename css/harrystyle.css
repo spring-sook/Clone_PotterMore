@@ -27,6 +27,12 @@
   font-weight: 100;
   font-style: normal;
 }
+@font-face {
+  font-family: "Harry Beast Regular";
+  src: url("../fonts/HarryBeastStandard-Regular.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
 .header {
   width: 100%;
   height: 80px;
@@ -73,7 +79,6 @@
   background-size: 16px 16px;
   margin-right: 10px;
   padding-left: 11px;
-  /* font-family: "Plus Jakarta Sans", sans-serif; */
   font-family: "Sofia Pro", sans-serif;
   font-weight: 500;
 }
@@ -85,7 +90,6 @@
   font-size: 15px;
   box-sizing: border-box;
   color: #fff;
-  /* font-family: "Plus Jakarta Sans", sans-serif; */
   font-family: "Sofia Pro", sans-serif;
   font-weight: 900;
   letter-spacing: 1.63px;
@@ -105,7 +109,6 @@
   box-sizing: border-box;
   color: #fff;
   background-color: #5758ff;
-  /* font-family: "Plus Jakarta Sans", sans-serif; */
   font-family: "Sofia Pro", sans-serif;
   font-weight: 900;
   letter-spacing: 1.63px;
@@ -135,7 +138,6 @@
 .nav > ul > li {
   display: flex;
   margin: 0 0.5em; /* 아이템 간 간격 */
-  /* font-family: "Plus Jakarta Sans", sans-serif; */
   font-family: "Sofia Pro", sans-serif;
   font-weight: 700;
   font-size: 0.85em;
@@ -333,6 +335,9 @@
   background-size: 2000px auto, 2000px auto, 100% 100%;
   background-repeat: no-repeat;
 }
+.section2-grid {
+  background-color: transparent;
+}
 .section2-container {
   display: flex;
   justify-content: center;
@@ -353,9 +358,10 @@
   box-sizing: border-box;
   background-color: transparent;
 }
-/* ============= 그라데이션 안먹음 =================*/
+/* =============== 그라데이션 안먹음 =================*/
 .section2-img {
   background: linear-gradient(0deg, #00001b, rgba(0, 0, 27, 0) 20%);
+  background-size: 15%;
 }
 .section2-grid img {
   /* display: block; */
@@ -386,18 +392,240 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* ============= 배경 안먹음 =================*/
 .section2-grid-footer {
   background-image: url("../images/section2_grid_bottom.png");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 30px;
+  background-color: transparent;
 }
 .poll {
   background-image: url("../images/section2_poll.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 95%;
   max-width: 520px;
   width: 100%;
   background-color: transparent;
+}
+.poll-container {
+  padding: 40px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+  height: 75%;
+}
+.poll-header {
+  background-color: transparent;
+  color: #fff;
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.poll-question {
+  background-color: transparent;
+  color: #fff;
+  font-family: "Harry Beast Regular", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 68px;
+}
+.section2-buttons {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.section2-buttons button {
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(11, 22, 59, 0.4);
+  padding: 15px 0;
+  border-radius: 10px;
+  border: 1px solid #5758ff;
+  text-align: center;
+  cursor: pointer;
+}
+.section2-buttons button:hover {
+  background-color: rgba(87, 88, 255, 0.4);
+}
+.section3 {
+  background-image: url("../images/horizons_train.png"),
+    url("../images/stars.png"),
+    linear-gradient(180deg, #110b0e, #373737 121.35%);
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 101%, 50% bottom;
+  background-size: 2000px auto, 2000px auto, 100% 100%;
+  background-repeat: no-repeat;
+}
+.section3-container {
+  padding: 60px auto 140px;
+  max-width: 1440px;
+  min-height: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+.section3-left {
+  background-color: transparent;
+  width: 50%;
+  height: 100%;
+}
+.section3-left-header {
+  background: url("../images/section3_left_header.svg") 50% center / contain
+    no-repeat;
+  width: 100%;
+  height: 90px;
+  z-index: 3;
+}
+.section3-right {
+  background-color: lightblue;
+  width: 30%;
+  height: 100%;
+}
+.dormitory1 {
+  background-image: url("../images/");
+}
+/* 여기 Section3 해야됨!!!!!!!!!!!!!!! */
+
+.section4 {
+  background-image: url("../images/horizons_hogwarts.png"),
+    url("../images/stars.png"),
+    linear-gradient(180deg, #110b0e, #373737 121.35%);
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 101%, 50% bottom;
+  background-size: 2000px auto, 2000px auto, 100% 100%;
+  background-repeat: no-repeat;
+}
+.section4-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px 25px 100px;
+  margin: auto;
+  min-height: 400px;
+  height: 100%;
+  background-color: transparent;
+}
+.section4-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8%;
+  color: #fff;
+}
+.section4-header-left,
+.section4-header-right {
+  width: 11.5%;
+  height: auto;
+}
+.section4-header-left {
+  transform: rotate(180deg);
+}
+.section4-header h2 {
+  font-family: "Harry Beast Regular", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.72px;
+}
+.section4-content {
+  display: flex;
+  gap: 4%;
+  margin-bottom: 110px;
+  padding: 30px 25px 0 25px;
+}
+.section4-content div {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  aspect-ratio: 360 / 247;
+}
+.section4-content-infobox1,
+.section4-content-infobox2,
+.section4-content-infobox3 {
+  position: relative;
+  background-size: cover;
+  color: #fff;
+  font-size: 24px;
+}
+.section4-content-infobox1 {
+  background-image: url("../images/section4_content1.jpg");
+}
+.section4-content-infobox2 {
+  background-image: url("../images/section4_content2.jpg");
+}
+.section4-content-infobox3 {
+  background-image: url("../images/section4_content3.jpg");
+}
+/* 그라디언트를 before로 추가 */
+.section4-content-infobox1::before,
+.section4-content-infobox2::before,
+.section4-content-infobox3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 50%, #000);
+  z-index: 1;
+}
+.section4-content img {
+  background-color: transparent;
+  opacity: 40%;
+  position: absolute;
+  width: 97%;
+  height: 96%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: 100% 100%;
+  z-index: 2;
+}
+/* 우측 상단에... 로고같이... 박아야됨... 개짜증남...;;; */
+.section4-content-info {
+  background-color: transparent;
+}
+.section4-content-title {
+  background-color: transparent;
+  font-family: "Harry Beast Regular", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin: 35% 0 0 7%;
+  width: 85%;
+  height: 30%;
+  z-index: 3;
+}
+.section4-content-footer {
+  background-color: transparent;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Sofia Pro", sans-serif;
+  text-align: center;
+  height: 20%;
+  z-index: 3;
+  display: flex;
+}
+.section4-content-footer span {
+  background-color: transparent;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+}
+.section4-content-footer span img {
+  width: 15px;
+  height: auto;
+  top: 8px;
+  margin-left: 8px;
 }
