@@ -202,9 +202,9 @@
   overflow: hidden;
 }
 .trailer {
-  background-image: url("../images/main_section1_trailer_thu.jpg");
+  background-image: url("../images/main_section1_trailer_weekend.jpg");
   background-size: cover;
-  background-position: center top;
+  background-position: left 50% top 30%;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
@@ -326,6 +326,7 @@
   letter-spacing: 1.63px;
   color: #fff;
   outline: 0;
+  cursor: pointer;
 }
 .section1-content > button:hover {
   background-color: #0b163b;
@@ -540,7 +541,8 @@
 .dormitory4 h3 {
   display: flex;
   position: relative;
-  top: -40px;
+  top: -30px;
+  left: -8px;
   font-family: "Sofia Pro Light", sans-serif;
   font-size: 17px;
   font-weight: 600;
@@ -553,7 +555,8 @@
 .dormitory4 h2 {
   display: flex;
   position: relative;
-  top: -38px;
+  top: -28px;
+  left: -3px;
   font-family: "Harry Beast Display", sans-serif;
   font-size: 26px;
   font-weight: 500;
@@ -597,7 +600,7 @@
 .dormitory2:hover .section3-banner-ravenclaw,
 .dormitory3:hover .section3-banner-hufflepuff,
 .dormitory4:hover .section3-banner-slytherin {
-  transform: translateY(20px) translateX(3px); /* 이미지가 아래로 이동 */
+  transform: translateY(20px); /* 이미지가 아래로 이동 */
 }
 
 /* 이미지 변경을 위한 애니메이션 적용 */
@@ -626,7 +629,7 @@
 .dormitory3:hover h2,
 .dormitory4:hover h3,
 .dormitory4:hover h2 {
-  transform: translateY(30px); /* 텍스트도 아래로 이동 */
+  transform: translateY(20px); /* 텍스트도 아래로 이동 */
 }
 .section3-right h2 {
   color: #fff;
@@ -1294,6 +1297,7 @@
 }
 .login-logo {
   display: flex;
+  align-items: center;
   max-width: 408px;
 }
 .login-logo-back {
@@ -1427,5 +1431,5 @@
   cursor: pointer;
 }
 .login-signup-language img:not(:first-child):hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
