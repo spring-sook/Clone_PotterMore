@@ -1,5 +1,4 @@
 * {
-  background-color: #00001b;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +32,9 @@
   font-weight: 100;
   font-style: normal;
 }
+/* ============================================= HEADER */
 .header {
+  background-color: #00001b;
   width: 100%;
   height: 80px;
   display: flex; /* 가로 배치 */
@@ -59,12 +60,17 @@
 .sns_logo {
   height: 24px;
   margin-right: 14px; /* 로고 간격 */
+  cursor: pointer;
 }
 .main_logo {
   width: 168px;
   position: absolute;
   left: 52%;
   transform: translateX(-50%);
+  cursor: pointer;
+}
+.main {
+  padding-bottom: 60px;
 }
 #search {
   width: 226px;
@@ -83,6 +89,7 @@
   font-weight: 500;
 }
 #login {
+  background-color: #00001b;
   width: 95px;
   height: 38px;
   border: 1.5px solid #fff;
@@ -94,6 +101,7 @@
   font-weight: 900;
   letter-spacing: 1.63px;
   margin-right: 7px;
+  cursor: pointer;
 }
 #login:hover {
   background-color: #fff;
@@ -112,12 +120,15 @@
   font-family: "Sofia Pro", sans-serif;
   font-weight: 900;
   letter-spacing: 1.63px;
+  cursor: pointer;
 }
 #signup:hover {
   background-color: #10141b;
   transition: all 0.1s ease-in;
 }
+/* ============================================= NAV */
 .nav {
+  background-color: #00001b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,6 +173,7 @@
 .nav > ul > li:hover {
   border-bottom: 1px solid #fff;
 }
+/* ============================================= NAV RIBBON */
 .nav_ribbon {
   display: flex;
   justify-content: center;
@@ -180,6 +192,7 @@
   color: hsla(0, 0%, 100%, 0.7);
   background-color: #0b163b;
 }
+/* ============================================= SECTION 1 */
 .section1 {
   display: flex;
   position: relative;
@@ -314,6 +327,10 @@
   color: #fff;
   outline: 0;
 }
+.section1-content > button:hover {
+  background-color: #0b163b;
+  border: 1px solid #5758ff;
+}
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -325,6 +342,7 @@
     opacity: 1;
   }
 }
+/* ============================================= SECTION 2 */
 .section2 {
   width: 100%;
   min-height: 400px;
@@ -335,18 +353,13 @@
   background-size: 2000px auto, 2000px auto, 100% 100%;
   background-repeat: no-repeat;
 }
-.section2-grid {
-  background-color: transparent;
-}
 .section2-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 37px;
   margin: 0 auto;
-  padding: 60px 20px 100px;
+  padding: 0 20px 100px;
   max-width: 1200px;
-  box-sizing: border-box;
-  background-color: transparent;
 }
 .section2 .contentlist {
   display: grid;
@@ -356,7 +369,6 @@
   max-width: 570px;
   width: 100%;
   box-sizing: border-box;
-  background-color: transparent;
 }
 /* =============== 그라데이션 안먹음 =================*/
 .section2-img {
@@ -364,11 +376,12 @@
   background-size: 15%;
 }
 .section2-grid img {
-  /* display: block; */
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 .section2-grid-item {
+  background-color: #00001b;
   min-height: 97px;
   padding: 5px 13px;
 }
@@ -382,6 +395,7 @@
   width: fit-content;
   position: relative;
   top: -18px;
+  cursor: pointer;
 }
 .section2-grid-content {
   font-size: 16px;
@@ -391,13 +405,14 @@
   min-height: 66px;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 .section2-grid-footer {
   background-image: url("../images/section2_grid_bottom.png");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 30px;
-  background-color: transparent;
+  cursor: pointer;
 }
 .poll {
   background-image: url("../images/section2_poll.png");
@@ -405,11 +420,9 @@
   background-size: 100% 95%;
   max-width: 520px;
   width: 100%;
-  background-color: transparent;
 }
 .poll-container {
   padding: 40px;
-  background-color: transparent;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -417,7 +430,6 @@
   height: 75%;
 }
 .poll-header {
-  background-color: transparent;
   color: #fff;
   font-family: "Sofia Pro Bold", sans-serif;
   font-size: 14px;
@@ -432,7 +444,6 @@
   margin-bottom: 68px;
 }
 .section2-buttons {
-  background-color: transparent;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -452,10 +463,11 @@
 .section2-buttons button:hover {
   background-color: rgba(87, 88, 255, 0.4);
 }
+/* ============================================= SECTION 3 */
 .section3 {
   background-image: url("../images/horizons_train.png"),
     url("../images/stars.png"),
-    linear-gradient(180deg, #110b0e, #373737 121.35%);
+    linear-gradient(180deg, #120b0e, #474083 121.35%);
   min-height: 400px;
   width: 100%;
   height: 100%;
@@ -464,36 +476,184 @@
   background-repeat: no-repeat;
 }
 .section3-container {
-  padding: 60px auto 140px;
-  max-width: 1440px;
+  padding-top: 80px;
   min-height: 400px;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: transparent;
 }
 .section3-left {
-  background-color: transparent;
-  width: 50%;
-  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 37%;
 }
 .section3-left-header {
-  background: url("../images/section3_left_header.svg") 50% center / contain
-    no-repeat;
+  position: relative;
   width: 100%;
-  height: 90px;
+  height: 80%;
+}
+.section3-left-header img {
+  position: relative;
+  width: 100%;
+  z-index: 4;
+}
+.section3-left-header::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  width: 100%;
+  height: 20%;
+  background-image: url("../images/section3_gradation.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 3;
 }
-.section3-right {
-  background-color: lightblue;
-  width: 30%;
-  height: 100%;
+.section3-left-content {
+  display: flex;
+  position: absolute;
+  width: 80%;
+  /* background-color: #323657; */
+  z-index: 1; /* content를 gradation 위에 위치시킴 */
+  margin-top: 35px;
 }
-.dormitory1 {
-  background-image: url("../images/");
+.dormitory1,
+.dormitory2,
+.dormitory3,
+.dormitory4 {
+  width: 25%;
+  position: relative;
+  /* background-color: #6d75b8; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.dormitory1 h3,
+.dormitory2 h3,
+.dormitory3 h3,
+.dormitory4 h3 {
+  display: flex;
+  position: relative;
+  top: -40px;
+  font-family: "Sofia Pro Light", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  transition: transform 0.5s ease-out; /* 텍스트 이동 */
+}
+.dormitory1 h2,
+.dormitory2 h2,
+.dormitory3 h2,
+.dormitory4 h2 {
+  display: flex;
+  position: relative;
+  top: -38px;
+  font-family: "Harry Beast Display", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgb(155, 152, 152);
+  transition: transform 0.5s ease-out; /* 텍스트 이동 */
+}
+.section3-banner-gryffindor,
+.section3-banner-ravenclaw,
+.section3-banner-hufflepuff,
+.section3-banner-slytherin {
+  width: 75%;
+  position: relative;
+  top: -35px;
+  transition: transform 0.5s ease-out; /* 이미지 이동 */
+}
+.section3-banner-gryffindor {
+  background-image: url("../images/banner_gryffindor_basic.png");
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section3-banner-ravenclaw {
+  background-image: url("../images/banner_ravenclaw_basic.png");
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section3-banner-hufflepuff {
+  background-image: url("../images/banner_hufflepuff_basic.png");
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section3-banner-slytherin {
+  background-image: url("../images/banner_slytherin_basic.png");
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.dormitory1:hover .section3-banner-gryffindor,
+.dormitory2:hover .section3-banner-ravenclaw,
+.dormitory3:hover .section3-banner-hufflepuff,
+.dormitory4:hover .section3-banner-slytherin {
+  transform: translateY(20px) translateX(3px); /* 이미지가 아래로 이동 */
+}
+
+/* 이미지 변경을 위한 애니메이션 적용 */
+.dormitory1:hover .section3-banner-gryffindor {
+  background-image: url("../images/banner_gryffindor_after.png");
+}
+
+.dormitory2:hover .section3-banner-ravenclaw {
+  background-image: url("../images/banner_ravenclaw_after.png");
+}
+
+.dormitory3:hover .section3-banner-hufflepuff {
+  background-image: url("../images/banner_hufflepuff_after.png");
+}
+
+.dormitory4:hover .section3-banner-slytherin {
+  background-image: url("../images/banner_slytherin_after.png");
+}
+
+/* 텍스트 이동 */
+.dormitory1:hover h3,
+.dormitory1:hover h2,
+.dormitory2:hover h3,
+.dormitory2:hover h2,
+.dormitory3:hover h3,
+.dormitory3:hover h2,
+.dormitory4:hover h3,
+.dormitory4:hover h2 {
+  transform: translateY(30px); /* 텍스트도 아래로 이동 */
+}
+.section3-right h2 {
+  color: #fff;
+  font-size: 42px;
+  font-family: "Harry Beast Regular";
+  font-weight: 400;
+  letter-spacing: 0.96px;
+  padding: 10% 0;
+}
+.section3-right button {
+  background-color: #5758ff;
+  padding: 12px 45px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 1px;
+  outline: 0;
+  cursor: pointer;
+}
+.section3-right button:hover {
+  background-color: #0b163b;
+  border: 1px solid #5758ff;
 }
 /* 여기 Section3 해야됨!!!!!!!!!!!!!!! */
-
+/* ============================================= SECTION 4 */
 .section4 {
   background-image: url("../images/horizons_hogwarts.png"),
     url("../images/stars.png"),
@@ -523,11 +683,13 @@
   align-items: center;
   gap: 1.8%;
   color: #fff;
+  background-color: transparent;
 }
 .section4-header-left,
 .section4-header-right {
   width: 11.5%;
   height: auto;
+  background-color: transparent;
 }
 .section4-header-left {
   transform: rotate(180deg);
@@ -536,12 +698,14 @@
   font-family: "Harry Beast Regular", sans-serif;
   font-size: 36px;
   letter-spacing: 0.72px;
+  background-color: transparent;
 }
 .section4-content {
   display: flex;
   gap: 4%;
-  margin-bottom: 110px;
+  margin-bottom: 7px;
   padding: 30px 25px 0 25px;
+  background-color: transparent;
 }
 .section4-content div {
   flex: 1;
@@ -557,6 +721,7 @@
   background-size: cover;
   color: #fff;
   font-size: 24px;
+  cursor: pointer;
 }
 .section4-content-infobox1 {
   background-image: url("../images/section4_content1.jpg");
@@ -612,20 +777,655 @@
   color: #fff;
   font-size: 12px;
   font-family: "Sofia Pro", sans-serif;
-  text-align: center;
+  width: 100%;
   height: 20%;
   z-index: 3;
   display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 .section4-content-footer span {
   background-color: transparent;
-  z-index: 3;
-  align-items: center;
-  justify-content: center;
 }
 .section4-content-footer span img {
   width: 15px;
   height: auto;
-  top: 8px;
-  margin-left: 8px;
+  top: 7px;
+  border-radius: 8px;
+}
+.section4-footer {
+  font-size: 14px;
+  font-family: "Sofia Pro", sans-serif;
+  line-height: normal;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-decoration-line: underline;
+  text-align: right;
+  padding-right: 3%;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* ============================================= SECTION 5 */
+.section5 {
+  background-image: url("../images/horizons_quidditch.png"),
+    url("../images/stars.png"),
+    linear-gradient(180deg, #18150e, #554936 121.35%);
+  background-position: 50% 101%, 50%, bottom !important;
+  background-size: 2000px auto, 2000px auto, 100% 100%;
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.section5-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 25px 100px;
+  margin: 0 auto;
+  min-height: 400px;
+  height: 100%;
+  background-color: transparent;
+}
+.section5-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8%;
+  color: #fff;
+  background-color: transparent;
+}
+.section5-header-left,
+.section5-header-right {
+  width: 11.5%;
+  height: auto;
+  background-color: transparent;
+}
+.section5-header-left {
+  transform: rotate(180deg);
+}
+.section5-header h2 {
+  font-family: "Harry Beast Regular", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.72px;
+  background-color: transparent;
+}
+.section5-slick-container {
+  width: 90%; /* 슬라이드의 너비 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+.section5-slick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+.section5-slick img {
+  width: 100%; /* 이미지 너비를 100%로 설정 */
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* 기본 화살표 텍스트 비활성화 */
+.slick-prev:before,
+.slick-next:before {
+  content: none !important;
+}
+/* 새로운 이미지 화살표 적용 */
+.slick-prev img,
+.slick-next img {
+  width: 15px; /* 원하는 크기로 설정 */
+  height: auto;
+}
+/* 기본 화살표 숨기기 (이미지가 적용된 화살표만 표시) */
+.slick-prev,
+.slick-next {
+  display: block; /* 기존의 텍스트 화살표는 숨기고, 이미지 화살표는 표시 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+/* ========= slick 양 끝 사진에 그라데이션 넣기 ===========*/
+/* ============================================= SECTION 6 */
+.section6 {
+  background: linear-gradient(180deg, #0e0812, #000);
+  background-position: 50% 101%, 50%, bottom !important;
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+}
+.section6-container {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 50px 25px;
+  color: #fff;
+}
+.section6-left {
+  background-image: url("../images/section6_left.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+}
+.section6-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+.section6-right h2 {
+  font-size: 40px;
+  line-height: 44px;
+  font-family: "Harry Beast Regular", sans-serif;
+  font-weight: 100;
+  width: 95%;
+}
+.section6-right p {
+  font-size: 18px;
+  width: 76%;
+  font-family: "Sofia Pro Light", sans-serif;
+  font-weight: 100;
+  margin: 25px 0;
+}
+.section6-right button {
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.63px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  padding: 12px 45px 14px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+.section6-right button:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* ============================================= SECTION 7 */
+.section7 {
+  background-image: url("../images/horizons_bridge.png"),
+    url("../images/stars.png"),
+    linear-gradient(180deg, #0e0812, #443455 121.35%);
+  background-position: 50% 101%, 50%, bottom !important;
+  background-size: 2000px auto, 2000px auto, 100% 100%;
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.section7-container {
+  padding: 80px 0 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+.section7-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 80%;
+  margin: auto;
+}
+.section7-header-left,
+.section7-header-right {
+  width: 12%;
+  height: auto;
+}
+.section7-header-left {
+  transform: rotate(180deg);
+  padding-bottom: 4%;
+}
+.section7-header-right {
+  padding-top: 4%;
+}
+.section7-header h2 {
+  font-family: "Harry Beast Regular", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.72px;
+  font-weight: 100;
+  text-align: center;
+}
+.section7-subheader {
+  font-family: "Sofia Pro Light", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  width: 80%;
+  margin: auto;
+}
+.section7-slick {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.section7-slick-item {
+  cursor: pointer;
+}
+.section7-footer {
+  font-size: 14px;
+  font-family: "Sofia Pro", sans-serif;
+  line-height: normal;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-decoration-line: underline;
+  text-align: right;
+  padding-right: 9.5%;
+  margin-top: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* ============================================= SECTION 8 */
+.section8 {
+  background-image: url("../images/horizons_burrow.png"),
+    url("../images/stars.png"),
+    linear-gradient(180deg, #0f0f11, #3f5468 121.35%);
+  background-position: 50% 101%, 50%, bottom !important;
+  background-size: 2000px auto, 2000px auto, 100% 100%;
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.section8-slick-content {
+  display: flex;
+}
+.section8-imgTitle {
+  color: #fff;
+  font-family: "Harry Beast Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  cursor: pointer;
+}
+.section8-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 25px 100px;
+  margin: 0 auto;
+  min-height: 400px;
+  height: 100%;
+  background-color: transparent;
+}
+.section8-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8%;
+  color: #fff;
+  background-color: transparent;
+}
+.section8-header-left,
+.section8-header-right {
+  width: 11.5%;
+  height: auto;
+  background-color: transparent;
+}
+.section8-header-left {
+  transform: rotate(180deg);
+}
+.section8-header h2 {
+  font-family: "Harry Beast Regular", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.72px;
+  background-color: transparent;
+}
+.section8-slick-container {
+  width: 90%; /* 슬라이드의 너비 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+.section8-slick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+.section8-slick img {
+  width: 100%; /* 이미지 너비를 100%로 설정 */
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* ============================================= SECTION 9 */
+.section9 {
+  background-image: url("../images/stars.png"),
+    linear-gradient(180deg, #15111d, #323657 121.35%);
+  background-position: 50% 101%, 50%, bottom !important;
+  background-size: 1500px auto, 100% 100%;
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.section9-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 25px 100px;
+  margin: 0 auto;
+  min-height: 400px;
+  height: 100%;
+  background-color: transparent;
+}
+.section9-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8%;
+  color: #fff;
+  background-color: transparent;
+}
+.section9-header-left,
+.section9-header-right {
+  width: 11.5%;
+  height: auto;
+  background-color: transparent;
+}
+.section9-header-left {
+  transform: rotate(180deg);
+}
+.section9-header h2 {
+  font-family: "Harry Beast Regular", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.72px;
+  background-color: transparent;
+}
+.section9-slick-container {
+  width: 90%; /* 슬라이드의 너비 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+.section9-slick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+.section9-slick img {
+  width: 100%; /* 이미지 너비를 100%로 설정 */
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* ============================================= FOOTER */
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  line-height: 1;
+  font-size: 10px;
+  position: relative;
+  background-color: #00001b;
+  height: 515px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footer-container {
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #696b78;
+  font-family: "Sofia Pro Light", sans-serif;
+  color: #fff;
+}
+.footer-content {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer-upper {
+  height: 105px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.footer-menu-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  font-size: 15px;
+  width: 80%;
+}
+.footer-menu-list div {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+}
+#footer-menu-item7 {
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+}
+#footer-menu-item8 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+#footer-menu-item9 {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+.footer-menu-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-upper img {
+  height: 51px;
+  width: auto;
+  cursor: pointer;
+}
+.footer-container hr {
+  border: 2px;
+  height: 1px;
+  background-color: #353643;
+}
+.footer-lower {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+.footer-lower-content {
+  text-align: left;
+  line-height: 1.33;
+  font-family: "Sofia Pro", sans-serif;
+  color: #9fa1ad;
+}
+.footer-lower-content p {
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 702px;
+  width: 100%;
+  margin: 16px 0;
+  letter-spacing: 0.25px;
+}
+.footer-lower-content span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-lower-sns {
+  margin: 19px 0 0;
+}
+.footer-lower-sns img {
+  cursor: pointer;
+}
+/* =============================================================================== */
+/* =============================================================================== */
+.login-page {
+  background-image: url("../images/login_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.login-logo {
+  display: flex;
+  max-width: 408px;
+}
+.login-logo-back {
+  width: 15px;
+}
+.login-logo-harry {
+  width: 220px;
+  margin: 30px 70px;
+}
+.login-letter {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  max-width: 408px;
+}
+.login-letter hr {
+  border: 2px;
+  height: 2px;
+  width: 100px;
+  background-color: #353643;
+}
+.login-letter img {
+  width: 28px;
+}
+.login-letter h1 {
+  font-family: "Harry Beast Display", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+}
+.login-input-container {
+  display: flex;
+  flex-direction: column;
+}
+.login-input-container label {
+  color: #fff;
+  font-family: "Sofia Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 20px 0 12px;
+}
+.login-input-container input {
+  width: 350px;
+  padding: 16px 20px;
+  border: 1px solid #696b78;
+  border-radius: 3px;
+  background: rgba(28, 30, 40, 0.5);
+  color: #fff;
+  font-family: "Sofia Pro", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-input-container p {
+  color: #c2bbff;
+  font-family: "Sofia Pro Light", sans-serif;
+  margin: 14px 0 0 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.login-input-container .login-login-button {
+  background-color: #5758ff;
+  padding: 12px 168px;
+  margin: 20px auto;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 1px;
+  outline: 0;
+  cursor: pointer;
+}
+.login-input-container .login-login-button:hover {
+  background-color: #0b163b;
+  border: 1px solid #5758ff;
+}
+.login-input-container a {
+  color: #fff;
+  text-decoration: none;
+}
+.login-input-container hr {
+  border: 1px;
+  height: 1px;
+  width: 395px;
+  background-color: #696b78;
+  margin: 20px 0;
+}
+.login-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-signup h3 {
+  color: #fff;
+  font-family: "Harry Beast Regular", sans-serif;
+  font-size: 26px;
+  margin: 10px 0;
+}
+.login-signup .login-signup-button {
+  padding: 12px 168px;
+  margin: 20px auto;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 1px;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.login-signup .login-signup-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.login-signup-language {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.login-signup-language img {
+  width: 33px;
+  height: 20px;
+}
+.login-signup-language img:first-child {
+  border-bottom: 2px solid white;
+  padding-bottom: 15px;
+}
+.login-signup-language img:not(:first-child) {
+  cursor: pointer;
+}
+.login-signup-language img:not(:first-child):hover {
+  transform: scale(1.1);
 }
